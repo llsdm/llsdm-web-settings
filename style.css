@@ -1,0 +1,90 @@
+body{ background: #fff color: #fff; font-family: Arial, sans-serif; }
+html, body { height:100%; padding: 0; margin: 0; }
+@font-face { font-family: HelveticaLight; src: url(fonts/HelveticaNeueCyr-Light.otf); }
+img { display: block; }
+
+.header { width: 100%; height: 50px; background-color: #171717; }
+	.logo { width: 32px; height: 37px; background-image: url(img/logo.png); position: relative; z-index: 2; top: 5px; left: 5px; float: left; }
+	.billbord-title { font-size: 16px; color: white; float: left; margin: 17px 0 0 20px; }
+
+.menu-map { width: 300px;  height: -moz-calc(100% - 50px); height: -webkit-calc(100% - 50px); height: calc(100% - 50px); background-color: #1f1f1f; float: left; }
+	.menu-block { width: 270px; height: 320px; padding: 15px 15px 15px 15px; background-color: #1f1f1f; cursor: default; }
+		.menu-title { width: 258px; height: 21px; background-color: #595959; margin-bottom: 1px; padding: 6px; color: white; font-weight: bold; z-index: 10; float: left; }
+		.menu-spoiler-button { width: 21px; height: 21px; background-color: red; float: right; }
+		.menu-block-value { width: 90px; height: 40px; float: left; text-align: center; margin-bottom: 1px; }
+			.menu-block-value-title { font-size: 12px; line-height: 20px; opacity: 0.5; letter-spacing: .1em; }
+			.menu-block-value-num { font-size: 16px; letter-spacing: .05em; }
+			.menu-block-city { color: white; font-size: 18px; font-weight: bold; line-height: 40px; opacity: 1; text-align: left; margin-left: 25px; }
+			
+.radar { width: -moz-calc(100% - 300px); width: -webkit-calc(100% - 300px); width: calc(100% - 300px); height: -moz-calc(100% - 50px); height: -webkit-calc(100% - 50px); height: calc(100% - 50px); overflow: scroll; position: absolute; }
+
+.icon_g_1_s_0,
+.icon_g_1_s_1,
+.icon_g_1_s_2,
+.icon_g_1_s_3,
+.icon_g_2_s_0,
+.icon_g_2_s_1,
+.icon_g_2_s_2,
+.icon_g_2_s_3,
+.icon_g_3_s_0,
+.icon_g_3_s_1,
+.icon_g_3_s_2,
+.icon_g_3_s_3 { width: 37px; height: 37px; background-image: url(img/billbords_icons.png); position: absolute; z-index: 3; }
+
+.angel_g_1_b_0,
+.angel_g_2_b_0,
+.angel_g_3_b_0,
+.angel_g_1_b_1,
+.angel_g_2_b_1,
+.angel_g_3_b_1 { width: 82px; height: 82px; position: absolute; z-index: 1; }
+
+.angel_g_1_b_0 { background-image: url(img/angel_1_b_0.png); }
+.angel_g_2_b_0 { background-image: url(img/angel_2_b_0.png); }
+.angel_g_3_b_0 { background-image: url(img/angel_3_b_0.png); }
+.angel_g_1_b_1 { background-image: url(img/angel_1_b_1.png); }
+.angel_g_2_b_1 { background-image: url(img/angel_2_b_1.png); }
+.angel_g_3_b_1 { background-image: url(img/angel_3_b_1.png); }
+
+.city_name { width: 37px; height: 37px; position: absolute; text-align: center; line-height: 85px; font-weight: bold; text-shadow: 0px 0px 5px black; z-index: 2; }
+.icon_bag_0 { cursor: pointer; }
+
+.icon_g_1_s_1 { background-position: 0 -37px; }
+.icon_g_1_s_2 { background-position: 0 -74px; }
+.icon_g_1_s_3 { background-position: 0 -111px; }
+.icon_g_2_s_0 { background-position: -37px 0px; }
+.icon_g_2_s_1 { background-position: -37px -37px; }
+.icon_g_2_s_2 { background-position: -37px -74px; }
+.icon_g_2_s_3 { background-position: -37px -111px; }
+.icon_g_3_s_0 { background-position: -74px 0px; }
+.icon_g_3_s_1 { background-position: -74px -37px; }
+.icon_g_3_s_2 { background-position: -74px -74px; }
+.icon_g_3_s_3 { background-position: -74px -111px; }
+
+
+.icon_veh_1,
+.icon_veh_2,
+.icon_veh_3,
+.icon_veh_4,
+.icon_veh_5,
+.icon_veh_6,
+.icon_veh_7,
+.icon_veh_8 { width: 17px; height: 17px; background-image: url(img/vehicles_icons.png); position: absolute; z-index: 1; }
+
+.icon_veh_2 { background-position: 0 -17px; }
+.icon_veh_3 { background-position: 0 -34px; }
+.icon_veh_4 { background-position: 0 -51px; }
+.icon_veh_5 { background-position: 0 -68px; }
+.icon_veh_6 { background-position: 0 -85px; }
+.icon_veh_7 { background-position: 0 -102px; }
+.icon_veh_8 { background-position: 0 -119px; }
+
+
+
+.radar::-webkit-scrollbar { width: 14px; height: 14px; background-color: #222222; }
+.radar::-webkit-scrollbar-track { background: #222222; }
+.radar::-webkit-scrollbar-thumb { background-color: #333333; border: 1px solid #222222; }
+.radar::-webkit-scrollbar-thumb:hover { background-color: #fff; }
+.radar::-webkit-scrollbar-button { width: 0px; height: 0px; }
+.radar::-webkit-scrollbar-corner { background: #222222; }
+.radar::-webkit-scrollbar-button:start:hover { background: #222222; }
+.radar::-webkit-scrollbar-track-piece:start:hover { background: #222222; }
